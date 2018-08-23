@@ -2,6 +2,11 @@ package part1;
 
 import java.util.Arrays;
 
+/**
+ * Dynamic Programming Algorithm to solve a 0-1 Knapsack Problem
+ * @author James Sutton
+ *
+ */
 public class Knapsack_0_to_1_DP {
 	
 	private static int[] weights;
@@ -40,6 +45,9 @@ public class Knapsack_0_to_1_DP {
 		System.out.println("\nTotal execution time: " + (endTime - startTime) + "ms");
 	}
 
+	/**
+	 * Creates dynamic programming table
+	 */
 	private static void knapsack() {
 		
 		int[][] V = new int[values.length][weightLimit+1];
@@ -63,14 +71,18 @@ public class Knapsack_0_to_1_DP {
 		}
 		
 		//prints table (commented out for consistency of execution time)
-//		System.out.println("Table:");
-//		for (int[] row : V){
-//			System.out.println(Arrays.toString(row));
-//		}
+		System.out.println("Table:");
+		for (int[] row : V){
+			System.out.println(Arrays.toString(row));
+		}
 		
 		recovery(V);
 	}
 
+	/**
+	 * recovers the chosen values from the table
+	 * @param V
+	 */
 	private static void recovery(int[][] V) {
 		//recovery
 		choices = new int[values.length];

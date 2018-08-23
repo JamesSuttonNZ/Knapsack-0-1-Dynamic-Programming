@@ -2,6 +2,11 @@ package part1;
 
 import java.util.Random;
 
+/**
+ * Takes inputs in order to generate values for the knapsack
+ * @author James Sutton
+ *
+ */
 public class TestGenerator_0_to_1_DP {
 
 	public static void main(String[] args){
