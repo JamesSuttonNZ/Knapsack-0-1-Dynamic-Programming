@@ -1,4 +1,7 @@
-Dynamic Programming Algorithm to solve a 0-1 Knapsack Problem
+# Dynamic Programming Algorithm to solve a 0-1 Knapsack Problem
+
+## How to run
+
 To run use the TestGenerator_0_to_1_DP class main method (recommended).
 This randomly generates weights and values within given ranges.
 This takes 4 command line arguments:
